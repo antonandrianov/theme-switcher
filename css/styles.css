@@ -1,0 +1,21 @@
+:root {
+    --global-background: hsl(0, 0%, 100%);
+    --global-foreground: hsl(0, 0%, 0%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --global-background: hsl(0, 0%, 0%);
+        --global-foreground: hsl(0, 0%, 100%);
+    }
+}
+
+:root[data-theme="dark"] {
+    --global-background: hsl(0, 0%, 0%);
+    --global-foreground: hsl(0, 0%, 100%);
+}
+
+html {
+    background-color: var(--global-background);
+    color: var(--global-foreground);
+}
