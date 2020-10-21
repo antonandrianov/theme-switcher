@@ -4,14 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Переключатель темы</title>
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./src/styles/styles.css" />
     </head>
     <body>
-        <div>
+        <div class="buttons-group">
             <button type="button" data-set-theme="auto">Авто</button>
-            <button type="button" data-set-theme="light">Светлая</button>
-            <button type="button" data-set-theme="dark">Темная</button>
+            <button type="button" data-set-theme="light">
+                <img src="./src/images/light.svg" />
+            </button>
+            <button type="button" data-set-theme="dark">
+                <img src="./src/images/dark.svg" />
+            </button>
         </div>
-        <script src="./js/main.js"></script>
+        <script src="./src/scripts/main.js"></script>
     </body>
 </html>
