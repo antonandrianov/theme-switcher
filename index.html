@@ -7,14 +7,30 @@
         <link rel="stylesheet" href="./src/styles/styles.css" />
     </head>
     <body>
-        <div class="buttons-group">
-            <button type="button" data-set-theme="auto">Авто</button>
-            <button type="button" data-set-theme="light">
-                <img src="./src/images/light.svg" />
-            </button>
-            <button type="button" data-set-theme="dark">
-                <img src="./src/images/dark.svg" />
-            </button>
+        <div class="radiogroup--toggle">
+            <input
+                type="radio"
+                name="theme-button"
+                id="auto"
+                data-set-theme="auto"
+            />
+            <label for="auto">Авто</label>
+
+            <input
+                type="radio"
+                name="theme-button"
+                id="light"
+                data-set-theme="light"
+            />
+            <label for="light"><img src="./src/images/light.svg" /></label>
+
+            <input
+                type="radio"
+                name="theme-button"
+                id="dark"
+                data-set-theme="dark"
+            />
+            <label for="dark"><img src="./src/images/dark.svg" /></label>
         </div>
         <script src="./src/scripts/main.js"></script>
     </body>
