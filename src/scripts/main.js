@@ -1,5 +1,6 @@
 let html = document.documentElement;
 let themeButtons = document.querySelectorAll("[data-set-theme]");
+let themeButton = document.querySelectorAll('.radiogroup--toggle-option');
 
 // Назначаем тему странице
 if (localStorage.getItem("theme") == null) {
@@ -25,3 +26,4 @@ themeButtons.forEach((button) => {
 
 // Вывод в консоль содержимого локального хранилища
 console.log(localStorage);
+console.log(themeButton);
